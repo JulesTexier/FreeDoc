@@ -8,7 +8,7 @@ class Doctor < ApplicationRecord
     has_many :appointments
 
 # Un doctor peut avoir plusieurs patient, au travers des appointments, et vice versa.
-    has_many :patients, through: :appointment
+    has_many :patients, through: :appointments
     
 # Un docteur aurait plusieurs specialty
     has_many :joints

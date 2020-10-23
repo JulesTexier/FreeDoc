@@ -5,5 +5,5 @@ class Patient < ApplicationRecord
 # Un patient peut avoir plusieurs appointment.
     has_many :appointments
 # Un patient peut avoir plusieurs doctor, au travers des appointments
-    has_many :doctors, through: :appointment
+    has_many :doctors, through: :appointments
 end
